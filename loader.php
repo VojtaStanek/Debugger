@@ -33,6 +33,6 @@ class Debugger
 
 	public static function __callStatic($name, array $args)
 	{
-		return call_user_func_array(array(self::getInstance(), $name), $args)
+		return call_user_func_array(array(self::getInstance(), $name), $args);
 	}
 }
